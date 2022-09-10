@@ -1,0 +1,117 @@
+
+body {
+  margin-top: 20px;
+  background-color: rgba(170, 157, 157, 0.4);
+}
+
+body::before {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.container {
+  padding-top: 15px;
+}
+
+/* upper bar */
+.fileprog{
+  margin: 2px;
+}
+
+/* form styles */
+.form-size {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 80%;
+  font-size: 18px;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.button{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+fieldset {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 15px;
+  border-radius: 0px;
+  padding: 10px;
+  border: none;
+}
+
+.stepwizard-step p {
+  margin-top: 10px;
+}
+
+.stepwizard-row {
+  display: table-row;
+}
+
+.stepwizard {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.stepwizard-row:before {
+  top: 14px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 0px;
+  background-color: #ccc;
+}
+
+.stepwizard-step {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+}
+
+/* Progress bar */
+.center{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.progress {
+  position: relative;
+  width: 300px;
+  height: 15px;
+  background: #9cbab4;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress__fill {
+  width: 0%;
+  height: 100%;
+  background: #0c97e7;
+  transition: all 0.2s;
+}
+
+.progress__text {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  /* font: bold 14px "Quicksand", sans-serif; */
+  color: #ffffff;
+}
